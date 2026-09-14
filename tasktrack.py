@@ -7,7 +7,7 @@ Course: CPS 310
 
 def display_menu():
     """Display the available TaskTrack menu options."""
-    print("\nTaskTrack")
+    print("\nTaskTrack Menu")
     print("1. View tasks")
     print("2. Add task")
     print("3. Exit")
@@ -28,8 +28,6 @@ def view_tasks(tasks):
 
     print("\nTasks:")
 
-    #TODO: Loop through enumerate(tasks, start=1).
-    #TODO: Display each number and task using an f-string.
     for number, task in enumerate(tasks, start=1):
         print(f"{number}. {task}")
 
