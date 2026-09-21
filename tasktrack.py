@@ -40,18 +40,23 @@ def load_tasks(filename):
         with open(filename, "r") as file:
             for line in file:
                 task_clean = line.strip()
-                
-                #TODO: ignore blank lines
+
                 if not task_clean: #evaulates to true if the line is blank, doesnt get added to tasks
                     continue 
 
-                #TODO: add each non-empty task to the tasks list
                 tasks.append(task_clean)
                 
     except FileNotFoundError:
         # A new project may not have a task file yet
         return []
     return tasks
+
+def save_tasks(tasks, filename):
+    """Save all tasks to a text file."""
+    with open(filename, "w") as file:
+        for task in tasks:
+            file.write(f"{task}\n")
+        
 
 def main():
     """Run the TaskTrack menu until the user chooses to exit."""
@@ -65,6 +70,7 @@ def main():
             view_tasks(tasks)
         elif choice == "2":
             add_task(tasks)
+            save_tasks(tasks, TASKS_FILE)
         elif choice == "3":
             print("Goodbye!")
             break
