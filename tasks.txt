@@ -4,3 +4,4 @@ Update the TaskTrack README
 Test persistent storage
 Numba 5
 Testing non empty tasks
+Adding a valid task
