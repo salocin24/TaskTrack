@@ -36,5 +36,9 @@ Interact with the prompt provided to use the program.
 - Pressing 2 on the keyboard adds new tasks to your list, and saves them to `tasks.txt`
 - Pressing 3 exits the program.
 
+## Version Control
+
+This project uses Git for local version control for local commits, and GitHub for its remote respitory so multiple developers can work on the same project, utilizing git push to push out changes TO the main branch, and git pull to pull changes FROM the main branch so the local repository doesn't get behind.
+
 ## Current limitation
 The program does not currently support "check list" functionality, there is no intermediary state between a task being added/removed. We could add a task "completed" state.
