@@ -1,7 +1,3 @@
-Complete ICA04
-Review GitHub commands
-Update the TaskTrack README
-Test persistent storage
-Numba 5
-Testing non empty tasks
-Adding a valid task
+Eat a hamburger
+Eat a hot dog
+Finish ICA05
