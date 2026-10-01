@@ -6,6 +6,7 @@ TaskTrack is a command-line task manager created for CPS 310.
 
 - Includes functionality for viewing and adding tasks to a list.
 - Includes saving and loading tasks from a .txt file for future use post program termination.
+- Includes removing tasks from the list after completion.
 
 ## Requirements
 
@@ -23,7 +24,8 @@ TaskTrack is a command-line task manager created for CPS 310.
 - follow the prompted menu to use the program.
 - (1) to view tasks added to your list
 - (2) to add new tasks to the list
-- (3) to exit the program
+- (3) to remove tasks from the list
+- (4) to exit the program
 
 ## Task Persistence
 
@@ -34,7 +36,8 @@ Tasks are loaded at the beginning of the program and then writen to `tasks.txt` 
 Interact with the prompt provided to use the program.
 - Pressing 1 on the keyboard views the tasks currently available.
 - Pressing 2 on the keyboard adds new tasks to your list, and saves them to `tasks.txt`
-- Pressing 3 exits the program.
+- Pressing 3 on the keyboard gives you the option to remove a task from `tasks.txt` by integer index.
+- Pressing 4 exits the program.
 
 ## Version Control
 
